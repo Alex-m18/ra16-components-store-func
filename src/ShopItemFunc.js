@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types'
+
 
 function ShopItemFunc(props) {
   const { brand, title, description, descriptionFull, price, currency } = props.item;
@@ -22,3 +24,7 @@ function ShopItemFunc(props) {
 }
 
 export default ShopItemFunc;
+
+ShopItemFunc.propTypes = {
+  item: PropTypes.object.isRequired,
+}
